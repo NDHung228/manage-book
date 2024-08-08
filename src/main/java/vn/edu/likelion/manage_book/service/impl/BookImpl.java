@@ -79,7 +79,7 @@ public class BookImpl implements BookService {
     public List<BookEntity> sortBooks() {
         List<BookEntity> books = bookRepository.findAll();
 
-        books.sort(Comparator.comparing(BookEntity::getPrice));
+        books.sort(Comparator.comparing(BookEntity::getPrice).reversed());
         return books;
     }
 

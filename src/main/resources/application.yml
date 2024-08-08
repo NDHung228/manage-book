@@ -1,6 +1,10 @@
 server:
   port: 8080
 
+jwt:
+  secret: syllabicate31231412312321314231231241241231231234124123
+  expiration: 86400000
+
 spring:
   datasource:
     url: jdbc:oracle:thin:@DongHung:1521:orcl
